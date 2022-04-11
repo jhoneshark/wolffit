@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Calculadora IMC</title>
+    
+    <link rel="stylesheet" href="imc.css" />
+  </head>
+  <body>
+
+    <header>
+      <div class="clock">
+        <div class="display">
+    </header>
+
+
+
+    <section>
+      <div class="container">
+        <div class="title">Calculadora - IMC</div>
+        <div class="input">
+          <label>Nome:</label>
+          <input type="text" id="nome" />
+        </div>
+        <div class="input">
+          <label>Altura:</label>
+          <input type="number" id="altura" required />
+        </div>
+        <div class="input">
+          <label>Peso:</label>
+          <input type="number" id="peso" required />
+        </div>
+        <button id="calcular">Calcular</button>
+
+        <div class="result" id="resultado"></div>
+      </div>
+
+
+    </section>
+
+    <footer>
+      <a href="../home.html" title="voltar">
+        <img src="../assets/img/wolf.gif" />
+      </a>
+    </footer>
+  </body>
+  <script src="./imc.js"></script>
+</html>

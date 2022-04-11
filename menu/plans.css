@@ -1,0 +1,244 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-image: url(../assets/img/planos.jpg);
+  background-size: 100% 100%;
+  color: white;
+  margin: 0;
+  overflow: hidden;
+}
+
+header {
+  width: 100%;
+  height: 15%;
+  text-align: center;
+  font-size: 45px;
+  font-family: "Sedgwick Ave Display";
+}
+
+.plans {
+  padding-top: 2%;
+  text-decoration: none;
+  color: white;
+}
+
+.plans h1 {
+  margin: 0;
+}
+
+section {
+  width: 100%;
+  height: 70%;
+  text-align: center;
+  font-family: "Ruluko";
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100px 1fr;
+  grid-template-areas:
+    "plan1 plan2"
+    "boss junior";
+}
+
+.plan1 h1 {
+  grid-area: plan1;
+  font-size: 45px;
+  margin: 5px 0;
+}
+
+.plan1 h2 {
+  margin: 5px 0;
+}
+
+.plan2 h1 {
+  grid-area: plan2;
+  font-size: 45px;
+  margin: 5px 0;
+}
+
+.plan2 h2 {
+  margin: 5px 0;
+}
+
+.boss {
+  grid-area: boss;
+  background-color: rgba(0, 0, 0, 0.4000000059604645);
+  border-radius: 40px;
+  width: 60%;
+  margin-left: 20%;
+}
+
+.boss p {
+  font-size: 24px;
+}
+
+.junior {
+  grid-area: junior;
+  background-color: rgba(0, 0, 0, 0.4000000059604645);
+  border-radius: 40px;
+  width: 60%;
+  margin-left: 20%;
+}
+
+.junior p {
+  font-size: 30px;
+  padding-top: 15px;
+}
+
+footer {
+  text-align: center;
+  width: 100%;
+  height: 15%;
+}
+
+footer img {
+  width: 200px;
+  height: 100%;
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@media (max-width: 1200px) {
+  header h1 {
+    padding-top: 15%;
+  }
+  
+  body {
+    background-image: url(../assets/img/plansMini.jpg);
+    background-size: 100% 100%;
+    
+    display: grid;
+    grid-template-rows: 15% 1fr 10%;
+  }
+  
+  .plans {
+    padding-top: 3%;
+  }
+
+  .plan1 {
+    padding-top: 10%;
+    
+  }
+
+  .plan2 {
+    margin-right: 7%;
+    padding-top: 10%;
+  }
+
+  section {
+    padding-top: 1%;
+    height: 1fr;
+    text-align: center;
+    font-family: "Ruluko";
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 20% 1fr;
+    grid-template-areas:
+      "plan1 plan2"
+      "boss junior";
+  }
+
+  .boss p {
+    font-size: 35px;
+  }
+
+  .junior p {
+    font-size: 40px;
+  }
+
+  footer {
+    height: 100%;
+  }
+
+  footer img {
+    width: 200px;
+    height: 100%;
+  }
+}
+
+@media (min-width: 1800px) {
+
+  body {
+    display: grid;
+    grid-template-rows: 15% 1fr 10%;
+  }
+
+  section {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-family: "Ruluko";
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 1fr;
+    grid-template-areas:
+      "plan1 plan2"
+      "boss junior";
+  }
+
+  .plan1 h1 {
+    grid-area: plan1;
+    font-size: 45px;
+    margin: 5px 0;
+  }
+
+  .plan1 h2 {
+    margin: 5px 0;
+  }
+
+  .plan2 h1 {
+    grid-area: plan2;
+    font-size: 45px;
+    margin: 5px 0;
+  }
+
+  .plan2 h2 {
+    margin: 5px 0;
+  }
+
+  .boss {
+    grid-area: boss;
+    background-color: rgba(0, 0, 0, 0.4000000059604645);
+    border-radius: 40px;
+    width: 60%;
+    margin-left: 20%;
+  }
+
+  .boss p {
+    font-size: 30px;
+  }
+
+  .junior {
+    grid-area: junior;
+    background-color: rgba(0, 0, 0, 0.4000000059604645);
+    border-radius: 40px;
+    width: 60%;
+    margin-left: 20%;
+  }
+
+  .junior p {
+    font-size: 30px;
+    padding-top: 15px;
+  }
+
+  footer {
+    height: 100%;
+  }
+
+  footer img {
+    width: 200px;
+    height: 100%;
+  }
+}
