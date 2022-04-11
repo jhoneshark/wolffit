@@ -231,7 +231,7 @@ footer {
   body {
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    overflow: auto;
     grid-template-columns: 1fr;
     grid-template-rows: 30% 1fr 15%;
     grid-template-areas:
@@ -325,14 +325,6 @@ footer {
     margin: 5% 0 5% 17%;
     display: none;
   }
-  /* 
-  .nav a:link {
-    font-size: 35px;
-  }
-
-  .nav a:visited {
-    font-size: 35px;
-  } */
 
   .bigName {
     font-family: "Sedgwick Ave Display";
